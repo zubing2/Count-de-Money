@@ -1,14 +1,64 @@
 /* Add your styles here */
 .coin-section {
-    margin-bottom: 20px;
-}
+    background-color: #edc7b7;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-right: -8px;
+    margin-left: -8px;
+    text-align: center;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
 
+}
+p {
+    font-family: "Helvetica Neue";
+}
+span {
+    font-family: "Helvetica Neue";
+}
 button {
+    align-items: center;
     margin: 5px;
+    border-radius: 10px;
+    font-family: "Helvetica Neue";
+    background-color: #eee2dc;
 }
 
 .total-section {
-    border-top: 2px solid #000;
     margin-top: 20px;
     padding-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    background-color: #123c69;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-bottom: 2px solid #000;
+}
+
+h2 {
+    font-family: "Helvetica Neue";
+    margin-bottom: 0px;
+}
+
+table, th, td {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#right {
+    text-align: right;
+}
+
+body {
+    color: #ac3b61;
 }
