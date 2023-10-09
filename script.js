@@ -52,7 +52,17 @@ function updateDisplay() {
     document.getElementById("totalValue").textContent = `$${totalValue}`;
 }
 
-// Add click event listeners to the buttons
+// Function to reset all values of each coin back to 0.
+function resetAllCounts() {
+    pennyCount = 0;
+    nickelCount = 0;
+    dimeCount = 0;
+    quarterCount = 0;
+    halfDollarCount = 0;
+    dollarCount = 0;
+}
+
+// Adds click event listeners to everything regarding pennies.
 document.getElementById("addPenny").addEventListener("click", function () {
     pennyCount = updateCoinCount(pennyCount, true);
     updateDisplay();
@@ -61,7 +71,22 @@ document.getElementById("subtractPenny").addEventListener("click", function () {
     pennyCount = updateCoinCount(pennyCount, false);
     updateDisplay();
 });
+document.getElementById("addPenny5").addEventListener("click", function () {
+    pennyCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractPenny5").addEventListener("click", function () {
+    if (pennyCount >= 5) {
+        pennyCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetPenny").addEventListener("click", function () {
+    pennyCount = 0;
+    updateDisplay();
+});
 
+// Adds click event listeners to everything regarding pennies.
 document.getElementById("addNickel").addEventListener("click", function () {
     nickelCount = updateCoinCount(nickelCount, true);
     updateDisplay();
@@ -70,7 +95,22 @@ document.getElementById("subtractNickel").addEventListener("click", function () 
     nickelCount = updateCoinCount(nickelCount, false);
     updateDisplay();
 });
+document.getElementById("addNickel5").addEventListener("click", function () {
+    nickelCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractNickel5").addEventListener("click", function () {
+    if (nickelCount >= 5) {
+        nickelCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetNickel").addEventListener("click", function () {
+    nickelCount = 0;
+    updateDisplay();
+});
 
+// Adds click event listeners to every button regarding dimes.
 document.getElementById("addDime").addEventListener("click", function () {
     dimeCount = updateCoinCount(dimeCount, true);
     updateDisplay();
@@ -79,7 +119,22 @@ document.getElementById("subtractDime").addEventListener("click", function () {
     dimeCount = updateCoinCount(dimeCount, false);
     updateDisplay();
 });
+document.getElementById("addDime5").addEventListener("click", function () {
+    dimeCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractDime5").addEventListener("click", function () {
+    if (dimeCount >= 5) {
+        dimeCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetDime").addEventListener("click", function () {
+    dimeCount = 0;
+    updateDisplay();
+});
 
+// Adds click event listeners to every button regarding quarters.
 document.getElementById("addQuarter").addEventListener("click", function () {
     quarterCount = updateCoinCount(quarterCount, true);
     updateDisplay();
@@ -88,7 +143,22 @@ document.getElementById("subtractQuarter").addEventListener("click", function ()
     quarterCount = updateCoinCount(quarterCount, false);
     updateDisplay();
 });
+document.getElementById("addQuarter5").addEventListener("click", function () {
+    quarterCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractQuarter5").addEventListener("click", function () {
+    if (quarterCount >= 5) {
+        quarterCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetQuarter").addEventListener("click", function () {
+    quarterCount = 0;
+    updateDisplay();
+});
 
+// Adds click event listeners to every button regarding half dollars.
 document.getElementById("addHalfDollar").addEventListener("click", function () {
     halfDollarCount = updateCoinCount(halfDollarCount, true);
     updateDisplay();
@@ -97,7 +167,22 @@ document.getElementById("subtractHalfDollar").addEventListener("click", function
     halfDollarCount = updateCoinCount(halfDollarCount, false);
     updateDisplay();
 });
+document.getElementById("addHalfDollar5").addEventListener("click", function () {
+    halfDollarCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractHalfDollar5").addEventListener("click", function () {
+    if (halfDollarCountt >= 5) {
+        halfDollarCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetHalfDollar").addEventListener("click", function () {
+    halfDollarCount = 0;
+    updateDisplay();
+});
 
+// Adds click event listeners to every button regarding dollars.
 document.getElementById("addDollar").addEventListener("click", function () {
     dollarCount = updateCoinCount(dollarCount, true);
     updateDisplay();
@@ -106,6 +191,28 @@ document.getElementById("subtractDollar").addEventListener("click", function () 
     dollarCount = updateCoinCount(dollarCount, false);
     updateDisplay();
 });
+document.getElementById("addDollar5").addEventListener("click", function () {
+    dollarCount += 5;
+    updateDisplay();
+});
+document.getElementById("subtractDollar5").addEventListener("click", function () {
+    if (dollarCount >= 5) {
+        dollarCount -= 5;
+        updateDisplay();
+    }
+});
+document.getElementById("resetDollar").addEventListener("click", function () {
+    dollarCount = 0;
+    updateDisplay();
+});
 
-// Initial display update
+// Adds click event listeners to every button regarding the total.
+function resetTotalValue() {
+    document.getElementById("totalValue").textContent = "$0.00";
+}
+document.getElementById("resetTotal").addEventListener("click", function () {
+    resetAllCounts();
+    resetTotalValue();
+    updateDisplay();
+});
 updateDisplay();
