@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" async></script>
-</head>
-<body>
-
-    <h1> Count de Money </h1>
+  </head>
+  <body>
+    <h1>Count de Money</h1>
     <div class="coin-section">
-        <h2>Pennies</h2>
-        <table>
-            <tr>
-                <td> <p>Amount:</p> </td>
-                <td id="right"><span id="pennyCount">0</span></td>
-            </tr>
-            <tr>
-                <td> <p>Value:</p> </td>
-                <td><span id="pennyValue">$0.00</span></td>
-            </tr>
-        </table>
-        <button id="subtractPenny5">-5</button>
-        <button id="subtractPenny">-1</button>
-        <button id="resetPenny">Reset</button>
-        <button id="addPenny">+1</button>
-        <button id="addPenny5">+5</button>
-        <h2>Nickels</h2>
-        <table>
-            <tr>
-                <td> <p>Amount:</p> </td>
-                <td id="right"><span id="nickelCount">0</span></td>
-            </tr>
-            <tr>
-                <td> <p>Value:</p> </td>
-                <td><span id="nickelValue">$0.00</span></td>
-            </tr>
-        </table>
-        <button id="subtractNickel5">-5</button>
-        <button id="subtractNickel">-1</button>
-        <button id="resetNickel">Reset</button>
-        <button id="addNickel">+1</button>
-        <button id="addNickel5">+5</button>
-        <h2>Dimes</h2>
-        <table>
+      <h2>Pennies</h2>
+      <table>
         <tr>
-            <td> <p>Amount:</p> </td>
-            <td id="right"><span id="dimeCount">0</span></td>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="pennyCount">0</span></td>
         </tr>
         <tr>
-            <td> <p>Value:</p> </td>
-            <td><span id="dimeValue">$0.00</span></td>
+          <td><p>Value:</p></td>
+          <td><span id="pennyValue">$0.00</span></td>
         </tr>
-    </table>
-    <button id="subtractDime5">-5</button>
-    <button id="subtractDime">-1</button>
-    <button id="resetDime">Reset</button>
-    <button id="addDime">+1</button>
-    <button id="addDime5">+5</button>
-        <h2>Quarters</h2>
-        <table>
+      </table>
+      <button id="subtractPenny5">-5</button>
+      <button id="subtractPenny">-1</button>
+      <button id="resetPenny">Reset</button>
+      <button id="addPenny">+1</button>
+      <button id="addPenny5">+5</button>
+      <h2>Nickels</h2>
+      <table>
         <tr>
-            <td> <p>Amount:</p> </td>
-            <td id="right"><span id="quarterCount">0</span></td>
-        </tr>
-        <tr>
-            <td> <p>Value:</p> </td>
-            <td><span id="quarterValue">$0.00</span></td>
-        </tr>
-    </table>
-    <button id="subtractQuarter5">-5</button>
-    <button id="subtractQuarter">-1</button>
-    <button id="resetQuarter">Reset</button>
-    <button id="addQuarter">+1</button>
-    <button id="addQuarter5">+5</button>
-        <h2>Half-Dollars</h2>
-        <table>
-        <tr>
-            <td> <p>Amount:</p> </td>
-            <td id="right"><span id="halfDollarCount">0</span></td>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="nickelCount">0</span></td>
         </tr>
         <tr>
-            <td> <p>Value:</p> </td>
-            <td><span id="halfDollarValue">$0.00</span></td>
+          <td><p>Value:</p></td>
+          <td><span id="nickelValue">$0.00</span></td>
         </tr>
-    </table>
-    <button id="subtractHalfDollar5">-5</button>
-    <button id="subtractHalfDollar">-1</button>
-    <button id="resetHalfDollar">Reset</button>
-    <button id="addHalfDollar">+1</button>
-    <button id="addHalfDollar5">+5</button>
-        <h2>Dollars</h2>
-        <table>
+      </table>
+      <button id="subtractNickel5">-5</button>
+      <button id="subtractNickel">-1</button>
+      <button id="resetNickel">Reset</button>
+      <button id="addNickel">+1</button>
+      <button id="addNickel5">+5</button>
+      <h2>Dimes</h2>
+      <table>
         <tr>
-            <td> <p>Amount:</p> </td>
-            <td id="right"><span id="dollarCount">0</span></td>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="dimeCount">0</span></td>
         </tr>
         <tr>
-            <td> <p>Value:</p> </td>
-            <td><span id="dollarValue">$0.00</span></td>
+          <td><p>Value:</p></td>
+          <td><span id="dimeValue">$0.00</span></td>
         </tr>
-    </table>
-    <button id="subtractDollar5">-5</button>
-    <button id="subtractDollar">-1</button>
-    <button id="resetDollar">Reset</button>
-    <button id="addDollar">+1</button>
-    <button id="addDollar5">+5</button> 
+      </table>
+      <button id="subtractDime5">-5</button>
+      <button id="subtractDime">-1</button>
+      <button id="resetDime">Reset</button>
+      <button id="addDime">+1</button>
+      <button id="addDime5">+5</button>
+      <h2>Quarters</h2>
+      <table>
+        <tr>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="quarterCount">0</span></td>
+        </tr>
+        <tr>
+          <td><p>Value:</p></td>
+          <td><span id="quarterValue">$0.00</span></td>
+        </tr>
+      </table>
+      <button id="subtractQuarter5">-5</button>
+      <button id="subtractQuarter">-1</button>
+      <button id="resetQuarter">Reset</button>
+      <button id="addQuarter">+1</button>
+      <button id="addQuarter5">+5</button>
+      <h2>Half-Dollars</h2>
+      <table>
+        <tr>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="halfDollarCount">0</span></td>
+        </tr>
+        <tr>
+          <td><p>Value:</p></td>
+          <td><span id="halfDollarValue">$0.00</span></td>
+        </tr>
+      </table>
+      <button id="subtractHalfDollar5">-5</button>
+      <button id="subtractHalfDollar">-1</button>
+      <button id="resetHalfDollar">Reset</button>
+      <button id="addHalfDollar">+1</button>
+      <button id="addHalfDollar5">+5</button>
+      <h2>Dollars</h2>
+      <table>
+        <tr>
+          <td><p>Amount:</p></td>
+          <td id="right"><span id="dollarCount">0</span></td>
+        </tr>
+        <tr>
+          <td><p>Value:</p></td>
+          <td><span id="dollarValue">$0.00</span></td>
+        </tr>
+      </table>
+      <button id="subtractDollar5">-5</button>
+      <button id="subtractDollar">-1</button>
+      <button id="resetDollar">Reset</button>
+      <button id="addDollar">+1</button>
+      <button id="addDollar5">+5</button>
     </div>
 
     <div class="total-section">
-        <h2>Total Value</h2>
-        <span id="totalValue">$0.00</span> <br>
-        <button id="resetTotal">Reset Total</button>
+      <h2>Total Value</h2>
+      <span id="totalValue">$0.00</span> <br />
+      <button id="resetTotal">Reset Total</button>
     </div>
-    
-</body>
+  </body>
 </html>
